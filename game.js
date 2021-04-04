@@ -50,9 +50,6 @@ function checkAnswer(currentLevel)
  }
  else
  {
-   userClickedPattern = [];
-   level = 0;
-   gamePattern = [];
    $("h1").text("Game Over! Press any to restart. ")
    playSound("wrong");
    $("body").addClass("game-over");
@@ -60,6 +57,9 @@ function checkAnswer(currentLevel)
                      {
                       $("body").removeClass("game-over");
                      },200);
+   userClickedPattern = [];
+   level = 0;
+   gamePattern = [];
  }
 }
 
